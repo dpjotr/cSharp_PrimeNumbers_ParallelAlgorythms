@@ -1,0 +1,37 @@
+N=1000
+
+---------------Task_1
+Looking for the primes from 0 to 1000
+Using ISPRIME                                   17,9881 milliseconds
+Using ERATHOSPHEN                               0 milliseconds
+Using MODIFIED_ERATHOSPHEN                      0 milliseconds
+---------------Task_2
+Using PARALLEL_ISPRIME                          39,9747 milliseconds
+Using PARALLEL_CYCLE_ERATHOSPHEN_MODIFIED       31,9801 milliseconds
+Error found:  position 961
+                                            ISPRIME                             False
+                                            ERATHOSPHEN                         False
+                                            PARALLEL_ISPRIME                    False
+                                            PARALLEL_CYCLE_ERATHOSPHEN_MODIFIED True
+
+N=10000
+
+---------------Task_1
+Looking for the primes from 0 to 10000
+Using ISPRIME                                   62,9624 milliseconds
+Using ERATHOSPHEN                               101,9353 milliseconds
+Using MODIFIED_ERATHOSPHEN                      48,9694 milliseconds
+---------------Task_2
+Using PARALLEL_ISPRIME                          64,9593 milliseconds
+Using PARALLEL_CYCLE_ERATHOSPHEN_MODIFIED       95,9406 milliseconds
+
+N=100000
+
+---------------Task_1
+Looking for the primes from 0 to 100000
+Using ISPRIME                                   4675,0953 milliseconds
+Using ERATHOSPHEN                               4494,2085 milliseconds
+Using MODIFIED_ERATHOSPHEN                      4497,1972 milliseconds
+---------------Task_2
+Using PARALLEL_ISPRIME                          4518,8673 milliseconds
+Using PARALLEL_CYCLE_ERATHOSPHEN_MODIFIED       4568,8551 milliseconds
